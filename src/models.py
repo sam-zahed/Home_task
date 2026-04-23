@@ -75,6 +75,18 @@ sample_documents = [
             DocumentSection("solution", "Open Company Portal and install Microsoft 365 Apps."),
         ],
     ),
+    Document(
+        document_id="PDF-001",
+        source_type="pdf",
+        source_ref="vpn-manual.pdf",
+        title="VPN Manual",
+        metadata={"product": "vpn", "audience": "all"},
+        sections=[
+            DocumentSection("page_text", "Open the VPN client and select your university profile.", page_number=3),
+            DocumentSection("page_text", "If login fails after a password reset, remove the old saved profile.", page_number=4),
+            DocumentSection("page_text", "Approve the MFA request on your phone to complete sign-in.", page_number=4),
+        ],
+    ),
 ]
 
 dense_results = [
